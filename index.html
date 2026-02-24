@@ -1,17 +1,70 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>StreamVault — Videos, Music, Gallery & Podcasts</title>
-    <meta name="description" content="StreamVault - Modern streaming platform for videos, music, gallery and podcasts" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <script src="https://www.youtube.com/iframe_api"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Clean Viewport (remove zoom blocking for SEO + accessibility) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>StreamVerse – Watch Videos, Music & Podcasts Online</title>
+  <meta name="description" content="StreamVerse is a modern streaming web app to watch videos, listen to music and stream podcasts in one place. Fast, smooth and responsive media platform." />
+  <meta name="keywords" content="video streaming app, music streaming web app, podcast player online, media platform, React streaming app" />
+  <meta name="author" content="Sudhir (SudhirDevOps1)" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://stream-verse-nine.vercel.app/" />
+
+  <!-- Open Graph (Facebook / LinkedIn Preview) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="StreamVerse – Modern Streaming Platform" />
+  <meta property="og:description" content="All-in-one streaming platform for videos, music and podcasts." />
+  <meta property="og:url" content="https://stream-verse-nine.vercel.app/" />
+  <meta property="og:site_name" content="StreamVerse" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="StreamVerse – Watch & Stream Media Online" />
+  <meta name="twitter:description" content="Modern React streaming web app built by SudhirDevOps1." />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#111827" />
+
+  <!-- Performance: Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Optimized Font Loading (reduced weights) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Defer YouTube API to prevent render blocking -->
+  <script defer src="https://www.youtube.com/iframe_api"></script>
+
+  <!-- Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "StreamVerse",
+    "url": "https://stream-verse-nine.vercel.app/",
+    "applicationCategory": "EntertainmentApplication",
+    "operatingSystem": "Web",
+    "creator": {
+      "@type": "Person",
+      "name": "Sudhir",
+      "url": "https://github.com/SudhirDevOps1"
+    },
+    "description": "Modern streaming platform for watching videos, listening to music and podcasts."
+  }
+  </script>
+
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
 </html>
